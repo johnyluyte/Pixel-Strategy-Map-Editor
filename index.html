@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pixel Strategy Map Editor</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/darkly.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+
+  <body>
+    <div class="container">
+      <h3>Pixel Strategy Map Editor</h3>
+      <ul class="breadcrumb" style="margin-bottom: 5px;">
+        <li><a href="#">New</a></li>
+        <li class="active">Load</li>
+        <li class="active">Save</li>
+        <li class="active">Download</li>
+      </ul>
+
+      <div class="panel panel-default">
+      <div class="panel-body">
+     
+      <div class="row">
+        <!-- Left Area -->
+        <div class="col-md-4" id="div-leftArea">
+          <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+            <li class="active"><a href="#Overview" data-toggle="tab">Overview</a></li>
+            <li><a href="#edit" data-toggle="tab">Edit Map</a></li>
+            <li class="disabled"><a>Help</a></li>
+            <li class="disabled"><a>Example</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+     
+            <!-- Tab Overview -->
+            <div class="tab-pane fade" id="Overview">
+              <!-- 加上 tooltip 提示使用者: 點選即可編輯此項目  -->
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-title">
+                  Square Settings
+                </li>                
+                <li class="list-group-item list-group-item-editable">
+                  Map Square (W*H): 
+                  <span class="badge">12*12 </span>
+                </li>
+                <li class="list-group-item list-group-item-editable">
+                  Square Size : 
+                  <span class="badge">30*30 px </span>
+                </li>
+                <li class="list-group-item list-group-item-noneEditable">
+                  Canvas Size (W*H): 
+                  <span class="badge">600*600 px</span>
+                </li>
+                <li class="list-group-item list-group-item-noneEditable">
+                  Map Size (W*H): 
+                  <span class="badge">400*400 px</span>
+                </li>
+              </ul>
+            
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-title">
+                  Canvas Settings
+                </li>                
+                <li class="list-group-item list-group-item-editable">
+                  Canvas Title: 
+                  <span class="badge">Untitled Canvas</span>
+                </li>
+                <li class="list-group-item list-group-item-editable">
+                  Map Title : 
+                  <span class="badge">Untitled Map</span>
+                </li>
+                <li class="list-group-item list-group-item-editable">
+                  Map Description : 
+                  <p>none</p>
+                </li>
+                <li class="list-group-item list-group-item-editable">
+                  Canvas Filter : 
+                  <span class="badge">Title</span>
+                  <span class="badge">Description</span>
+                  <span class="badge">Legend</span>
+                </li>
+              </ul>
+
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-title">
+                  Other Settings
+                </li>                
+                <li class="list-group-item list-group-item-editable">
+                  Ruler Font Color: 
+                  <span class="badge">White</span>
+                </li>
+                <li class="list-group-item list-group-item-editable">
+                  Ruler Line Color: 
+                  <span class="badge">White</span>
+                </li>
+                <li class="list-group-item list-group-item-editable">
+                  Ruler Background Color: 
+                  <span class="badge">Black</span>
+                </li>                
+                <li class="list-group-item list-group-item-editable">
+                  Square Background Color: 
+                  <span class="badge">Black</span>
+                </li>
+              </ul>             
+            </div><!-- /Tab Settings -->
+
+
+            <!-- Tab Edit -->
+            <div class="tab-pane fade active in" id="edit">
+
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-title">
+                  Block Type
+                </li>
+                <li class="list-group-item list-group-item-noneEditable">
+                  <div class="row" id="div_block_type">
+                    <div class="col-md-4">
+                    <table>
+                      <tr>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_7"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_8"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_9"></canvas></td>
+                      </tr>
+                      <tr>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_4"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_5"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_6"></canvas></td>
+                      </tr>
+                      <tr>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_1"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_2"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_3"></canvas></td>
+                      </tr>
+                    </table>
+                    </div>
+                    <div class="col-md-2">
+                     <table>
+                      <tr>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_8b"></canvas></td>
+                      </tr>
+                      <tr>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_5b"></canvas></td>
+                      </tr>
+                      <tr>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_2b"></canvas></td>
+                      </tr>
+                    </table>
+                    </div>
+                    <div class="col-md-4">
+                    <table>
+                      <tr>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_4c"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_5c"></canvas></td>
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_6c"></canvas></td>
+                      </tr>
+                    </table>
+                    <table>
+                      <tr>
+                        <td><canvas width="90" height="30" class="canvas_block_type" id="canvas_block_type_delete"></canvas></td>
+                      </tr>
+                    </table>          
+                    <table>
+                      <tr>
+                        <td><canvas width="90" height="30" class="canvas_block_type" id="canvas_block_type_auto"></canvas></td>
+                      </tr>
+                    </table>
+                    </div>
+                    <div class="col-md-2">
+                        <td><canvas width="30" height="30" class="canvas_block_type" id="canvas_block_type_5d"></canvas></td>               
+                    </div> 
+                  </div> <!-- /row -->
+                </li>
+              </ul> 
+
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-title">
+                  Block Styles
+                </li>
+                <li class="list-group-item list-group-item-noneEditable">
+                  The yellow character is the shortcut key to that Block Style.
+                </li>
+                <li class="list-group-item list-group-item-noneEditable">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="div_block_style_holder">
+                        <canvas width="30" height="30" class="canvas_user_block_type" id="canvas_block_type_5d"></canvas>A
+                      </div>
+                    </div>                    <div class="col-md-3">
+                      <div class="div_block_style_holder">
+                        <canvas width="30" height="30" class="canvas_user_block_type" id="canvas_block_type_5d"></canvas>B
+                      </div>
+                    </div>                    <div class="col-md-3">
+                      <div class="div_block_style_holder">
+                        <canvas width="30" height="30" class="canvas_user_block_type" id="canvas_block_type_5d"></canvas>C
+                      </div>
+                    </div>                    <div class="col-md-3">
+                      <div class="div_block_style_holder">
+                        <canvas width="30" height="30" class="canvas_user_block_type" id="canvas_block_type_5d"></canvas>D
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul> 
+              <hr>
+
+              <button type="button" class="btn btn-info btn-block">Add new Block Style</button>
+
+            </div>
+
+          </div> <!-- /.tab-content -->
+        </div>
+
+
+
+
+
+        <!-- Right Area -->
+        <div class="col-md-8" id="div-rightArea">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Untitled Canvas</h3>
+            </div>               
+            <div class="panel-body">
+              <div id="map">
+              </div>
+            </div>
+            <div> show warning message to the user here</div>
+            <button type="button" class="btn btn-primary btn-block">Covert and Download</button>
+          </div>
+        </div>  <!-- /.col-md-8 -->  
+
+      
+      </div> <!-- /row -->
+      </div> <!-- /.panel-body -->
+      </div> <!-- /.panel panel-default -->
+      <footer>
+        Chess Map Creater v0.8b, by <a href='mailto:johnyluyte@gmail.com'>Chun Chien</a>. Report issues <a href="">here</a>.<br/>
+        Fork me on <a href=''>Github</a>.Code released under the MIT License.Based on Bootstrap. Icons from Font Awesome
+        Sites that uses this to create walkthought map:
+      </footer>
+
+    </div> <!-- /container -->
+
+  <!-- Insert External Sctips Here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+  <script src="lib/bootstrap/bootstrap.min.js"></script>
+  <script src="index.js"></script>  
+  </body>
+</html>
