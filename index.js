@@ -6,6 +6,11 @@ var map = {
   color : "#3FEA90"
 };
 
+/* 
+Somehow we may make good use of these UIs 
+http://jqueryui.com/slider/#steps
+*/
+
 /* 一樣要考慮多國語言怎麼做 */
 
 /* Overview 那邊提供顏色 template 選擇 */
@@ -180,6 +185,3 @@ $(function(){
 
 });
 
-/*
-  改放在 github pages?
-*/
