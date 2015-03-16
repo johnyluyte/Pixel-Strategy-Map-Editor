@@ -5,7 +5,7 @@ To be updated.
 
 ## Website
 
-Here is the live [website](http://chunnorris.net/public/PixelStrategyMap/).
+Here is the live [website](http://chunnorris.cc/public/PixelStrategyMap/).
 
 
 ## Example
